@@ -1,0 +1,25 @@
+# R
+.Rhistory
+.RData
+.RDataTmp
+.Rproj.user/
+
+# Credenciales (no subir al repo)
+.Renviron
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Salidas del pipeline (regenerables)
+corpus_filtrado/*.xlsx
+corpus_filtrado/*.txt
+resultados_redes/
+resultados_graficos/
+
+# Datos y modelos pesados (no subir al repo)
+*.parquet
+*.udpipe
