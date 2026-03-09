@@ -14,15 +14,14 @@ __pycache__/
 # macOS
 .DS_Store
 
-# Salidas del pipeline (regenerables)
+# Salidas del pipeline (regenerables; solo Excel de corpus excluido por tamaño)
 corpus_filtrado/*.xlsx
-corpus_filtrado/*.txt
 analisis_noticias/corpus_filtrado/*.xlsx
-analisis_noticias/corpus_filtrado/*.txt
-resultados_redes/
-resultados_graficos/
 
 # Datos y modelos pesados (no subir al repo)
 *.parquet
 prensa_datos.parquet
 *.udpipe
+
+# Datos experimento prosocial (marinos, vulnerables, control)
+Prosocial_marinos/df_marinos_vulnerables_control.xlsx

@@ -1,0 +1,9 @@
+{
+  "n_nodes": 72,
+  "n_edges": 248,
+  "density": 0.097,
+  "n_components": 18,
+  "giant_component_size": 55,
+  "avg_path_length": 54.7724,
+  "diameter": 207
+}

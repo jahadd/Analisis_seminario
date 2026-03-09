@@ -1,0 +1,8 @@
+Entrada: PostgreSQL noticias_chile (2018-01-01 a 2026-12-31)
+Salida: /Users/matiascarmach/Desktop/Psicología/Practica/Seminario de titulo/Correcciones/Entrega final/Analisis tesis/analisis_noticias/corpus_filtrado/corpus_filtrado_db_20260307_1943.xlsx
+Inicial: 850287
+Después CAPA 0: 66522
+Después CAPA 1: 63118
+Después CAPA 2: 60798
+Después CAPA 3: 55542
+Final (CAPA 4): 55026
