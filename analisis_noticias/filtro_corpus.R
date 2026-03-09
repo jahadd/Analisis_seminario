@@ -52,11 +52,25 @@ VERBOS_EVALUATIVOS <- c(
 )
 
 SUSTANTIVOS_EVALUATIVOS <- c(
-  "abuso", "abusos", "exceso", "excesos", "ilegitimo", "ilegitima",
-  "privilegios", "privilegio", "estigma", "estigmatizacion",
-  "legitimidad", "ilegitimidad", "impunidad", "criminalizacion",
-  "discriminacion", "discriminador", "prejuicio", "prejuicios",
-  "trato desigual", "desigualdad", "abusos de poder", "abuso de poder"
+  "denuncia", "denuncias",
+  "critica", "criticas",
+  "cuestionamiento", "cuestionamientos",
+  "acusacion", "acusaciones",
+  "rechazo", "rechazos",
+  "respaldo", "respaldos",
+  "controversia", "controversias",
+  "polemica", "polemicas",
+  "conflicto", "conflictos",
+  "violencia", "violencias",
+  "abuso", "abusos",
+  "impunidad",
+  "discriminacion", "discriminaciones",
+  "desigualdad", "desigualdades",
+  "privilegio", "privilegios",
+  "estigma", "estigmas",
+  "estigmatizacion",
+  "criminalizacion",
+  "vulneracion", "vulneraciones"
 )
 
 INDICADORES_CITA <- c(
@@ -101,13 +115,22 @@ texto_completo <- function(df, i) {
   paste(partes, collapse = " ")
 }
 
-# Versión vectorizada: construye _texto para todo el df de una vez (más rápido en corpus grandes)
+# Versión vectorizada: operaciones por columna (sin apply por filas), mucho más rápida en corpus grandes
 texto_completo_vectorizado <- function(df) {
   cols <- intersect(c("titulo", "resumen", "contenido"), names(df))
   if (length(cols) == 0L) return(character(nrow(df)))
-  m <- as.matrix(df[, cols, drop = FALSE])
-  m[is.na(m)] <- ""
-  apply(m, 1L, function(x) paste(trimws(as.character(x))[nchar(trimws(as.character(x))) > 0], collapse = " "))
+  # Por columna: a carácter, NA -> "", recorte de espacios (todo vectorizado)
+  partes <- lapply(cols, function(col) {
+    x <- df[[col]]
+    x <- as.character(x)
+    x[is.na(x)] <- ""
+    stri_trim_both(x)
+  })
+  # paste() es vectorizado: una cadena por fila
+  out <- do.call(paste, c(partes, list(sep = " ")))
+  # Colapsar espacios múltiples y recortar
+  out <- stri_replace_all_regex(out, "\\s+", " ")
+  stri_trim_both(out)
 }
 
 crear_regex_terminos <- function(terminos) {

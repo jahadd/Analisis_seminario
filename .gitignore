@@ -22,4 +22,5 @@ resultados_graficos/
 
 # Datos y modelos pesados (no subir al repo)
 *.parquet
+prensa_datos.parquet
 *.udpipe
