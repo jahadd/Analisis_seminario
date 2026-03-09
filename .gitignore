@@ -17,6 +17,8 @@ __pycache__/
 # Salidas del pipeline (regenerables)
 corpus_filtrado/*.xlsx
 corpus_filtrado/*.txt
+analisis_noticias/corpus_filtrado/*.xlsx
+analisis_noticias/corpus_filtrado/*.txt
 resultados_redes/
 resultados_graficos/
 
