@@ -28,9 +28,11 @@ Se examinó si el esfuerzo prosocial varía entre grupos socialmente diferenciad
 
 ## Prosocial_marinos
 
-- **`df_marinos_vulnerables_control.xlsx`** — Datos agregados por grupo (marinos APOLINAV, vulnerables, control).  
-- **`Anova_seminario.jasp`** — Análisis ANOVA (JASP).  
-- **`Análisis Gráficos Marinos.R`** — Script R para generar gráficos de esfuerzo (self/other, recompensa, esfuerzo) y estrés (DASS-21) por grupo.  
+- **`Conducta_Prosocial_Marinos.xlsx`** — Datos agregados por grupo (marinos APOLINAV, vulnerables, control).
+- **`Anova_seminario.jasp`** — Análisis ANOVA (JASP).
+- **`Script Limpieza.R`** — Script R de limpieza y preparación de los datos.
+- **`Análisis Gráficos Marinos.R`** — Script R para generar gráficos de esfuerzo (self/other, recompensa, esfuerzo) y estrés (DASS-21) por grupo.
+- **`Informe procesamiento de los datos.docx`** — Informe descriptivo del procesamiento de datos.
 - Gráficos PNG de resultados (overall, reward, effort, DASS-21 por grupo).
 
 Requisitos: R, paquetes usados en el script (p. ej. `ggplot2`, `readxl` según el código).
@@ -52,14 +54,7 @@ Incluye:
 - **`graficos_serie_y_palabras.R`** — Serie temporal y gráficos.  
 - **`scraping/`** — Scripts por medio (EMOL, La Tercera, Cooperativa, Biobío, etc.) y `prensa_scraping.R`.  
 - **`config_search.json`** — Términos de búsqueda por dimensión (NAVAL_FFAA, VULNERABILIDAD, etc.).
+- **`SEMINARIO_DE_TITULO_FINAL-3.pdf`** — Documento final del seminario de título.
 
-Los archivos pesados (`*.parquet`, `*.udpipe`, `prensa_datos.parquet`) están en `.gitignore` y no se suben al repositorio.
 
----
 
-## Tesis
-
-El documento completo del seminario de título está en:
-
-`Seminario de titulo MATIAS CARMACH.pdf`  
-(ruta local del proyecto de correcciones/entrega final; no incluido en este repo.)
