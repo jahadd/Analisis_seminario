@@ -5,7 +5,8 @@ Repositorio de análisis y código del seminario de título:
 **Análisis experimental del esfuerzo prosocial en grupos socialmente diferenciados desde una contextualización semántica**
 
 - **Autor:** Matías Carmach (Magíster en Psicología Social, UAI)  
-- **Supervisores:** Teresa Ropert, Sebastián Contreras Huerta  
+- **Supervisores:** Teresa Ropert, Sebastián Contreras Huerta
+- **Agradecimientos:** José Javier Bórquez y Diego Garrido 
 
 ---
 
