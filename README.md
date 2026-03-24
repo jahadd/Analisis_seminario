@@ -23,7 +23,7 @@ Se examinó si el esfuerzo prosocial varía entre grupos socialmente diferenciad
 | Carpeta | Contenido |
 |--------|------------|
 | **`Prosocial_marinos/`** | Análisis del componente experimental: datos (marinos, vulnerables, control), ANOVAs (JASP), scripts R para gráficos de esfuerzo prosocial y DASS-21. |
-| **`analisis_noticias/`** | *Media scoping review*: scraping de prensa chilena, filtro de corpus por capas de pertinencia, análisis de redes temáticas y gráficos de serie temporal. |
+| **`analisis_noticias/`** | *Revisión Sistemática de Prensa Digital*: scraping de prensa chilena, filtro de corpus por capas de pertinencia, análisis de redes temáticas y gráficos de serie temporal. |
 
 ---
 
